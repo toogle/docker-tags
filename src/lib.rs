@@ -29,6 +29,7 @@ struct TagsResponse {
 }
 
 /// A Docker image representation
+#[derive(Debug)]
 pub struct Image {
     registry: String,
     repository: String,
@@ -187,7 +188,7 @@ impl TryFrom<&str> for Image {
 }
 
 /// A Docker image tag representation
-#[derive(Eq, PartialEq)]
+#[derive(Debug, Eq, PartialEq)]
 pub struct Tag {
     name: String,
 }
