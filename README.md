@@ -6,6 +6,7 @@ CLI tool to list tags for Docker images with sensible sorting.
 - Works with Docker Hub and other registries, compliant with OCI Distribution Specification.
 - Sorts semantic versions with newest first and falls back to alphabetical for non-semver tags.
 - Supports authentication via Docker credentials (`~/.docker/config.json`).
+- Can filter tags by regex (`-f` flag) and limit the number of tags shown (`-n` flag).
 
 ## Basic Usage (CLI)
 - `docker-tags [<registry>/][<namespace>/]<image>` — list tags for an image (e.g., `docker-tags alpine`).
